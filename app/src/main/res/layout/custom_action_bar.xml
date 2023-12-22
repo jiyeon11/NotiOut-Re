@@ -1,0 +1,26 @@
+<!-- res/layout/custom_action_bar.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <!-- 아이콘 (이미지뷰) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- 텍스트뷰 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  경기 상세정보"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>
