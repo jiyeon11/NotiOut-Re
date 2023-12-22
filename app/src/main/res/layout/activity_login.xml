@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <!--로고-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:padding="0dp"
+        android:textSize="25dp"
+        android:text="우리 팀 경기를\n알아서 챙겨주는,"/>
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/logo" />
+
+    <!--아이디 입력-->
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@drawable/borderbox"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="16dp"
+        android:hint="아이디를 입력해주세요" />
+
+    <!--비밀번호 입력-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/borderbox"
+        android:textSize="16dp"
+        android:layout_marginEnd="30dp"
+        android:hint="비밀번호를 입력해주세요" />
+
+    <!--확인(로그인) 버튼-->
+    <ImageButton
+        android:id="@+id/roginButton"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/okbutton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!--아이디 찾기-->
+        <TextView
+            android:id="@+id/findId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="아이디 찾기" />
+        <!--구분 선-->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#E4E4E4"/>
+        <!--비밀번호 찾기-->
+        <TextView
+            android:id="@+id/findPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="비밀번호 찾기" />
+        <!--구분 선-->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#E4E4E4"/>
+        <!--회원가입-->
+       <TextView
+           android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="회원가입" />
+    </LinearLayout>
+
+    <!--간편 로그인-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+        <View
+            android:layout_width="130dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_centerInParent="true"
+            android:background="#E4E4E4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="13dp"
+            android:text="간편 로그인" />
+        <View
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:background="#E4E4E4"/>
+    </LinearLayout>
+
+    <!--구글 로그인 버튼-->
+    <ImageButton
+        android:id="@+id/googleRoginButton"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/google" />
+    <!--카카오톡 로그인 버튼-->
+    <ImageButton
+        android:id="@+id/kakaoRoginButton"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/kakao" />
+    <!--네이버 로그인 버튼-->
+    <ImageButton
+        android:id="@+id/naverRoginButton"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/naver" />
+</LinearLayout>

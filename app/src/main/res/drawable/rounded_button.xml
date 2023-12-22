@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00AAB7"/> <!-- 버튼의 배경색 -->
+    <corners android:radius="100dp"/> <!-- 모서리를 둥글게 만드는 반지름 값 -->
+</shape>
