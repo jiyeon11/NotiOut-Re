@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
+import android.util.Log;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         fragment_profile = new FragProfile();
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        Intent intent = new Intent();
+        Log.d("d", ": "+intent.getStringExtra("event"));
 
         // 초기 화면으로 홈 프래그먼트를 설정
         getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, fragment_home).commit();

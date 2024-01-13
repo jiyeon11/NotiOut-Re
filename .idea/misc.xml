@@ -5,8 +5,13 @@
       <map>
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/borderbox.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/edittext_rounded_corner_rectangle.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/ic_launcher_background.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_button.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_button_white.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/selector.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/shape_clicked.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/shape_unclicked.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/sports_logo_button.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/activity_event_choice.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/activity_game_info.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/activity_login.xml" value="0.35520833333333335" />
