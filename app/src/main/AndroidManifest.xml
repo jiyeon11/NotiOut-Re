@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Noti">
         <activity
+            android:name=".Team_Search_Activity"
+            android:exported="false" />
+        <activity
             android:name=".EventChoiceActivity"
             android:exported="false" />
         <activity

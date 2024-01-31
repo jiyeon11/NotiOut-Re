@@ -10,7 +10,7 @@
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="35dp"
         android:src="@drawable/logo" />
 
     <TextView
@@ -19,7 +19,7 @@
         android:textColor="@color/black"
         android:layout_marginTop="50dp"
         android:textStyle="bold"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="35dp"
         android:textSize="20dp"
         android:text="챙기고 싶은 스포츠 종목을 선택하세요!"/>
 

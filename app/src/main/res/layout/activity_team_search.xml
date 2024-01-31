@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Team_Search_Activity">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="35dp"
+        android:textSize="20dp"
+        android:text="좋아하는 팀을 검색하세요!"/>
+
+    <!-- 검색바 -->
+    <RelativeLayout
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:queryHint="검색어를 입력하세요" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_bar"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sports"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="야구"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/rounded_square" />
+
+    <!--완료 버튼-->
+    <ImageButton
+        android:id="@+id/completeButton"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="300dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/complete_button" />
+
+    <!--뒤로가기 버튼-->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_button" />
+</LinearLayout>

@@ -71,7 +71,7 @@ public class EventChoiceActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EventChoiceActivity.this, MainActivity.class);  //일단은 메인으로
+                Intent intent = new Intent(EventChoiceActivity.this, Team_Search_Activity.class);  //팀 검색화면으로
                 intent.putExtra("sports",type);
                 startActivity(intent);
             }
@@ -81,8 +81,7 @@ public class EventChoiceActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EventChoiceActivity.this, Login.class);  //로그인 화면으로
-                startActivity(intent);
+                finish();
             }
         });
     }
