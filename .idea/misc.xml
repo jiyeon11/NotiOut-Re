@@ -6,6 +6,7 @@
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/borderbox.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/edittext_rounded_corner_rectangle.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/ic_launcher_background.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/list_item.xml" value="0.2515" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_button.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_button_white.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_square.xml" value="0.263" />
@@ -24,6 +25,7 @@
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_calendar.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_home.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_profile.xml" value="0.35520833333333335" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/list_item.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/menu/bottom_menu.xml" value="0.35520833333333335" />
       </map>
     </option>
