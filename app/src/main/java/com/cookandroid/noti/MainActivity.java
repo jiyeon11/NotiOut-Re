@@ -36,8 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
-        Intent intent = new Intent();
-        Log.d("d", ": "+intent.getStringExtra("event"));
+        //FragHome한테 종목이랑 고른 팀 전달
+        Intent intent = getIntent();
+        Bundle bundle = new Bundle();
+        bundle.putString("sports", intent.getStringExtra("sports"));
+        bundle.putString("likeTeam", intent.getStringExtra("likeTeam"));
+        fragment_home.setArguments(bundle);
 
         // 초기 화면으로 홈 프래그먼트를 설정
         getSupportFragmentManager().beginTransaction().replace(R.id.main_layout, fragment_home).commit();

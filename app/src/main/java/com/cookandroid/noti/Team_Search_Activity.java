@@ -11,6 +11,8 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import com.cookandroid.noti.Fragment.FragHome;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class Team_Search_Activity extends AppCompatActivity {
     TextView sports,team;
     androidx.appcompat.widget.SearchView searchView;
     String sports_name;
+    String choiceTeam;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +71,8 @@ public class Team_Search_Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Team selectedItem = (Team) parent.getItemAtPosition(position);
-                team.setText(selectedItem.getName());
+                choiceTeam = selectedItem.getName();
+                team.setText(choiceTeam);
                 team.setVisibility(View.VISIBLE);  //보이게
                 listView.setVisibility((View.GONE));  //리스트뷰 숨김
             }
@@ -79,6 +83,8 @@ public class Team_Search_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Team_Search_Activity.this, MainActivity.class);  //메인화면으로
+                intent.putExtra("sports", sports_name);  //종목
+                intent.putExtra("likeTeam", choiceTeam);  //선택한 팀
                 startActivity(intent);
             }
         });

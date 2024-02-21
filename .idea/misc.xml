@@ -11,6 +11,7 @@
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_button_white.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/rounded_square.xml" value="0.263" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/selector.xml" value="0.227" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/shadow_effect.xml" value="0.2995" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/shape_clicked.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/shape_unclicked.xml" value="0.227" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/drawable/sports_logo_button.xml" value="0.227" />
@@ -23,9 +24,10 @@
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/custom_action_bar.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_alram.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_calendar.xml" value="0.35520833333333335" />
-        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_home.xml" value="0.35520833333333335" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_home.xml" value="0.34227467811158796" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/frag_profile.xml" value="0.35520833333333335" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/list_item.xml" value="0.35520833333333335" />
+        <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/layout/schedule_layout.xml" value="0.5" />
         <entry key="..\:/CookAndroid/Project/Noti/app/src/main/res/menu/bottom_menu.xml" value="0.35520833333333335" />
       </map>
     </option>
