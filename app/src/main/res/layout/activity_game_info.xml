@@ -28,27 +28,18 @@
             android:textSize="18dp" />
     </LinearLayout>
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@drawable/game_img" />-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/black"
-        android:text="2023 KBO 포스트 시즌"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="200dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/gameName"
         android:textColor="@color/black"
         android:text="준플레이오프 1차전 NC 다이노스 vs SSG\n랜더스"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -64,6 +55,7 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:layout_marginTop="20dp"
+            android:id="@+id/place"
             android:layout_marginLeft="3dp"
             android:textColor="@color/black"
             android:text="인천 SSG 랜더스필드"/>
@@ -82,18 +74,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
+            android:id="@+id/date"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="3dp"
             android:textColor="@color/black"
             android:text="10/22(일) 18:30~"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <ImageButton
+            android:id="@+id/reservationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="190dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/alarm_setting_button"/>
+    </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/reservationButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="190dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/buy"/>
 </LinearLayout>
