@@ -4,6 +4,273 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ReservationActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- 텍스트뷰 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="  경기 알림 설정"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <!-- 선 -->
+    <View
+        android:layout_width="1000dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:elevation="8dp"
+        android:layout_centerInParent="true"
+        android:background="#B3B3B3"/>
+    <!-- 경기 이름 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginRight="13dp"
+        android:id="@+id/gameName"
+        android:textColor="@color/black"
+        android:text="SSG 랜더스 vs NC 다이노스 준PO 1차전"/>
+
+    <!-- 선 -->
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_centerInParent="true"
+        android:background="#B3B3B3"/>
+
+    <!-- 경기 날짜 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/date"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="10/22(일) 18:30~"/>
+    </LinearLayout>
+
+    <!-- 선 -->
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_centerInParent="true"
+        android:background="#B3B3B3"/>
+
+    <!-- 경기장 장소 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="22dp"
+            android:id="@+id/place"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="인천 SSG 랜더스필드"/>
+    </LinearLayout>
+
+    <!-- 선 -->
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:layout_centerInParent="true"
+        android:background="#B3B3B3"/>
+
+    <!-- 경기 예매 시간 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ticket_icon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/ticket"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="10월 20일 (금) 14:00 인터파크"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="하루 전"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/toggleADayAgo"
+            android:layout_width="57dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="1시간 전"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/toggleAHourAgo"
+            android:layout_width="57dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="10분 전"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/toggle10minAgo"
+            android:layout_width="57dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:text="예매 시작"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/togglestart"
+            android:layout_width="57dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/toggle_selector"
+            android:checked="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <ImageButton
+            android:id="@+id/addAlarmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="190dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/add_alarm_button"/>
+    </LinearLayout>
 </LinearLayout>

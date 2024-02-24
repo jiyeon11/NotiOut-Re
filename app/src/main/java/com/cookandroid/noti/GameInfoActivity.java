@@ -32,6 +32,10 @@ public class GameInfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GameInfoActivity.this, ReservationActivity.class);  //경기 상세정보로
+                intent.putExtra("date", date.getText().toString());
+                intent.putExtra("place", place.getText().toString());
+                intent.putExtra("game_name", gameName.getText().toString());
+                //예약사이트는 일단 다음에
                 startActivity(intent);
             }
         });
